@@ -1,0 +1,14 @@
+site_name: Lynx CRM - Docs
+site_description: 
+copyright: Lynx CRM
+site_url: https://docs.lynx.vn
+site_author: Lynx
+theme:
+    name: readthedocs
+    custom_dir: themes/lynx/
+repo_name: Github
+repo_url: https://github.com/mynukeviet/lynx-docs
+pages:
+- Bắt đầu:
+    - Giới thiệu: index.md
+    - Cài đặt: install.md
