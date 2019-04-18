@@ -12,3 +12,5 @@ pages:
 - Bắt đầu:
     - Giới thiệu: index.md
     - Cài đặt: install.md
+- Modules:
+    - Thông báo: modules/notification.md
