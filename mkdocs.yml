@@ -14,3 +14,4 @@ pages:
     - Cài đặt: install.md
 - Modules:
     - Thông báo: modules/notification.md
+    - Hóa đơn: modules/invoice.md
