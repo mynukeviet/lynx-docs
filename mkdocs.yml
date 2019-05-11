@@ -3,15 +3,20 @@ site_description:
 copyright: Lynx CRM
 site_url: https://docs.lynx.vn
 site_author: Lynx
-theme:
-    name: readthedocs
-    custom_dir: themes/lynx/
+
+theme: readthedocs
+theme_dir: xf2
+extra_css: [extra.css]
+    
 repo_name: Github
 repo_url: https://github.com/mynukeviet/lynx-docs
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        
 pages:
-- Bắt đầu:
-    - Giới thiệu: index.md
-    - Cài đặt: install.md
+- Bắt đầu: index.md
 - Modules:
     - Thông báo: modules/notification.md
     - Hóa đơn: modules/invoice.md
