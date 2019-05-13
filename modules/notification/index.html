@@ -6,14 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <meta name="author" content="Lynx">
+  <meta name="author" content="TDFOSS.,LTD">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>Thông báo - Lynx CRM - Docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../extra.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -24,7 +25,7 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -35,51 +36,57 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> 
-        	<img src="https://docs.lynx.vn/img/logo.png" alt="Lynx CRM - Docs">
-        </a>
+        <a href="../.." class="icon icon-home"> Lynx CRM - Docs</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Từ khóa tìm kiếm..." title="Nhập nội dung tìm kiếm vào đây..." />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <p class="caption"><span class="caption-text">Bắt đầu</span></p>
-                <ul>
-                    <li class="toctree-l1">
-    <a class="" href="../..">Giới thiệu</a>
-                    </li>
-                    <li class="toctree-l1">
-    <a class="" href="../../install/">Cài đặt</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Modules</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current">
-    <a class="current" href="./">Thông báo</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#danh-sach-thong-bao">Danh sách thông báo</a></li>
-    
-
-    <li class="toctree-l2"><a href="#cau-hinh-thong-bao-ay">Cấu hình thông báo đẩy</a></li>
-    
-
-    <li class="toctree-l2"><a href="#cau-hinh-thong-bao-qua-slack">Cấu hình thông báo qua Slack</a></li>
-    
-
-    </ul>
-                    </li>
-                    <li class="toctree-l1">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Bắt đầu</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../calendar.md">Lịch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../customer/">Khách hàng</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../projects/">Dự án</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <a class="" href="../invoice/">Hóa đơn</a>
-                    </li>
-                </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../email.md">Email</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../other.md">Khác</a>
+	    </li>
+          
+        </ul>
       </div>
-    </div>
+      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -98,10 +105,6 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Modules &raquo;</li>
-        
-      
     
     <li>Thông báo</li>
     <li class="wy-breadcrumbs-aside">
@@ -111,19 +114,18 @@
       
     </li>
   </ul>
-  
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h2 id="danh-sach-thong-bao">Danh sách thông báo</h2>
+                <h2 id="danh-sach-thong-bao">Danh sách thông báo<a class="headerlink" href="#danh-sach-thong-bao" title="Permanent link">#</a></h2>
 <ul>
 <li>Khi có thông báo mới, hệ thông sẽ hiển thị tại danh sách thông báo ở góc phải màn hình (icon cái chuông)</li>
 <li>Người sử dụng có thể xem lại các thông báo cũ tại khu vực này</li>
 </ul>
 <p><img alt="" src="/images/danh-sach-thong-bao.png" />        </p>
-<h2 id="cau-hinh-thong-bao-ay">Cấu hình thông báo đẩy</h2>
+<h2 id="cau-hinh-thong-bao-ay">Cấu hình thông báo đẩy<a class="headerlink" href="#cau-hinh-thong-bao-ay" title="Permanent link">#</a></h2>
 <p>Với thông báo đẩy, người sử dụng hệ thống sẽ nhận được thông báo trên màn hình khi có sự kiện mới. OneSignal được tích hợp sẵn trong Lynx để thực hiện việc này.</p>
 <p>Để cấu hình, bạn cần thực hiện một số bước sau đây:</p>
 <ol>
@@ -132,7 +134,7 @@
 <li>Quay về trang chính, ở góc phải màn hình bạn sẽ thấy một biểu tượng nhỏ của Onesignal (Hình cái chuông màu đỏ), click vào đây để đăng ký nhận thông báo. Bạn chỉ cần thực hiện duy nhất một lần.</li>
 <li>Tương tự cho các người sử dụng khác nếu muốn nhận thông báo đẩy</li>
 </ol>
-<h2 id="cau-hinh-thong-bao-qua-slack">Cấu hình thông báo qua Slack</h2>
+<h2 id="cau-hinh-thong-bao-qua-slack">Cấu hình thông báo qua Slack<a class="headerlink" href="#cau-hinh-thong-bao-qua-slack" title="Permanent link">#</a></h2>
 <p>Nếu đơn vị của bạn sử dụng ứng dụng Slack (https://slack.com/) làm công cụ giao tiếp nội bộ thì việc tích hợp thông báo giữa Lynx với Slack làm cho công việc của bạn trở nên nhịp nhàng hơn.</p>
 <p><img alt="" src="/images/thong-bao-slack.png" /></p>
 <p>Để cấu hình, bạn cần thực hiện một số bước sau đây:</p>
@@ -152,9 +154,9 @@
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Lynx CRM</p>
-    
   </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -164,25 +166,16 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../install/" style="color: #fcfcfc;">&laquo; Trang trước</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../invoice/" style="color: #fcfcfc">Trang tiếp &raquo;</a></span>
       
     </span>
 </div>
     <script>var base_url = '../..';</script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
-    <script type="text/javascript" defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(false);
-        };
-    </script>
 
 </body>
 </html>

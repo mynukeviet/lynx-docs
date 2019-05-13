@@ -8,7 +8,7 @@
   
   <meta name="author" content="TDFOSS.,LTD">
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Hóa đơn - Lynx CRM - Docs</title>
+  <title>Khách hàng - Lynx CRM - Docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "H\u00f3a \u0111\u01a1n";
-    var mkdocs_page_input_path = "modules/invoice.md";
-    var mkdocs_page_url = "/modules/invoice/";
+    var mkdocs_page_name = "Kh\u00e1ch h\u00e0ng";
+    var mkdocs_page_input_path = "modules/customer.md";
+    var mkdocs_page_url = "/modules/customer/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
@@ -59,9 +59,27 @@
     <a class="" href="../calendar.md">Lịch</a>
 	    </li>
           
-            <li class="toctree-l1">
+            <li class="toctree-l1 current">
 		
-    <a class="" href="../customer/">Khách hàng</a>
+    <a class="current" href="./">Khách hàng</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#chuyen-lien-he-thanh-khach-hang">Chuyển liên hệ thành khách hàng</a></li>
+    
+
+    <li class="toctree-l2"><a href="#chia-se-thong-tin-kh-cho-nhan-vien-khac">Chia sẽ thông tin KH cho nhân viên khác</a></li>
+    
+
+    <li class="toctree-l2"><a href="#nhap-khach-hang-tu-excel">Nhập khách hàng từ Excel</a></li>
+    
+
+    <li class="toctree-l2"><a href="#xuat-danh-sach-khach-hang">Xuất danh sách khách hàng</a></li>
+    
+
+    <li class="toctree-l2"><a href="#tu-ong-gui-thu-chuc-mung-sinh-nhat">Tự động gửi thư chúc mừng sinh nhật</a></li>
+    
+
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -69,18 +87,9 @@
     <a class="" href="../projects/">Dự án</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">Hóa đơn</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#binh-luan-trong-hoa-on">Bình luận trong hóa đơn</a></li>
-    
-
-    <li class="toctree-l2"><a href="#tai-hoa-on-pdf">Tải hóa đơn PDF</a></li>
-    
-
-    </ul>
+    <a class="" href="../invoice/">Hóa đơn</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -115,10 +124,10 @@
     
       
     
-    <li>Hóa đơn</li>
+    <li>Khách hàng</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/mynukeviet/lynx-docs/edit/master/docs/modules/invoice.md"
+        <a href="https://github.com/mynukeviet/lynx-docs/edit/master/docs/modules/customer.md"
           class="icon icon-github"> Edit on Github</a>
       
     </li>
@@ -128,15 +137,16 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="binh-luan-trong-hoa-on">Bình luận trong hóa đơn<a class="headerlink" href="#binh-luan-trong-hoa-on" title="Permanent link">#</a></h2>
-<p>Tính năng này giúp các nhân viên có thể thảo luận về hóa đơn ngay tại trang xem chi tiết hóa đơn. </p>
-<p>Để bật tính năng này, <strong>ACP / Quản lý bình luận / Cấu hình</strong>. Chọn <strong>Sửa</strong> ở module <strong>Hóa đơn</strong>, tích chọn vào <strong>Sử dụng chức năng bình luận</strong> và <strong>Lưu cấu hình</strong></p>
-<p>Quay lại xem chi tiết hóa đơn, cuối trang sẽ xuất hiện khu vực bình luận</p>
-<h2 id="tai-hoa-on-pdf">Tải hóa đơn PDF<a class="headerlink" href="#tai-hoa-on-pdf" title="Permanent link">#</a></h2>
-<p>Đối với phiên bản Opensource, cần cài đặt thư viện PHP MPDF để cố thể tải về hóa đơn PDF</p>
-<blockquote>
-<p>composer require mpdf/mpdf</p>
-</blockquote>
+                <p>Module chia khách hàng thành 2 loại:</p>
+<ul>
+<li>Khách hàng: Là những người đã trở thành khách hàng của công ty</li>
+<li>Liên hệ: Là những người chưa trở thành khách hàng của công ty</li>
+</ul>
+<h2 id="chuyen-lien-he-thanh-khach-hang">Chuyển liên hệ thành khách hàng<a class="headerlink" href="#chuyen-lien-he-thanh-khach-hang" title="Permanent link">#</a></h2>
+<h2 id="chia-se-thong-tin-kh-cho-nhan-vien-khac">Chia sẽ thông tin KH cho nhân viên khác<a class="headerlink" href="#chia-se-thong-tin-kh-cho-nhan-vien-khac" title="Permanent link">#</a></h2>
+<h2 id="nhap-khach-hang-tu-excel">Nhập khách hàng từ Excel<a class="headerlink" href="#nhap-khach-hang-tu-excel" title="Permanent link">#</a></h2>
+<h2 id="xuat-danh-sach-khach-hang">Xuất danh sách khách hàng<a class="headerlink" href="#xuat-danh-sach-khach-hang" title="Permanent link">#</a></h2>
+<h2 id="tu-ong-gui-thu-chuc-mung-sinh-nhat">Tự động gửi thư chúc mừng sinh nhật<a class="headerlink" href="#tu-ong-gui-thu-chuc-mung-sinh-nhat" title="Permanent link">#</a></h2>
               
             </div>
           </div>
@@ -144,8 +154,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../projects/" class="btn btn-neutral float-right" title="Dự án">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../projects/" class="btn btn-neutral" title="Dự án"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../.." class="btn btn-neutral" title="Bắt đầu"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -171,8 +183,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../projects/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../projects/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

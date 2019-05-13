@@ -6,18 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <meta name="author" content="Lynx">
+  <meta name="author" content="TDFOSS.,LTD">
   <link rel="shortcut icon" href="./img/favicon.ico">
   <title>Lynx CRM - Docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
   <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="./extra.css" rel="stylesheet">
   
   <script src="./js/jquery-2.1.1.min.js" defer></script>
   <script src="./js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -28,39 +29,57 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="./." class="icon icon-home"> 
-        	<img src="https://docs.lynx.vn/img/logo.png" alt="Lynx CRM - Docs">
-        </a>
+        <a href="./." class="icon icon-home"> Lynx CRM - Docs</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-    <input type="text" name="q" placeholder="Từ khóa tìm kiếm..." title="Nhập nội dung tìm kiếm vào đây..." />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <p class="caption"><span class="caption-text">Bắt đầu</span></p>
-                <ul>
-                    <li class="toctree-l1">
-    <a class="" href="./.">Giới thiệu</a>
-                    </li>
-                    <li class="toctree-l1">
-    <a class="" href="./install/">Cài đặt</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Modules</span></p>
-                <ul>
-                    <li class="toctree-l1">
-    <a class="" href="./modules/notification/">Thông báo</a>
-                    </li>
-                    <li class="toctree-l1">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="./.">Bắt đầu</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="./modules/calendar.md">Lịch</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="./modules/customer/">Khách hàng</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="./modules/projects/">Dự án</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <a class="" href="./modules/invoice/">Hóa đơn</a>
-                    </li>
-                </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="./modules/email.md">Email</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="./modules/other.md">Khác</a>
+	    </li>
+          
+        </ul>
       </div>
-    </div>
+      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -83,14 +102,13 @@
       
     </li>
   </ul>
-  
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
 
-  <h1 id="search">Kết quả tìm kiếm</h1>
+  <h1 id="search">Search Results</h1>
 
   <form id="content_search" action="search.html">
     <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
@@ -98,7 +116,7 @@
   </form>
 
   <div id="mkdocs-search-results" class="search-results">
-    Đang tìm...
+    Searching...
   </div>
 
 
@@ -112,9 +130,9 @@
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Lynx CRM</p>
-    
   </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -124,7 +142,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -134,11 +152,6 @@
     <script>var base_url = '.';</script>
     <script src="./js/theme.js" defer></script>
       <script src="./search/main.js" defer></script>
-    <script type="text/javascript" defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(false);
-        };
-    </script>
 
 </body>
 </html>

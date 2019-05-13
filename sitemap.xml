@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://docs.lynx.vn/</loc>
-     <lastmod>2019-04-25</lastmod>
+     <lastmod>2019-05-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.lynx.vn/install/</loc>
-     <lastmod>2019-04-25</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.lynx.vn/modules/notification/</loc>
-     <lastmod>2019-04-25</lastmod>
+     <loc>https://docs.lynx.vn/modules/customer/</loc>
+     <lastmod>2019-05-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.lynx.vn/modules/projects/</loc>
+     <lastmod>2019-05-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.lynx.vn/modules/invoice/</loc>
-     <lastmod>2019-04-25</lastmod>
+     <lastmod>2019-05-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
 </urlset>
