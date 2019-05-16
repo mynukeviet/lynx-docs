@@ -448,7 +448,6 @@ footer div[role=contentinfo] p {
     content: none;
 }
 
-
 h3 {
     font-size: 120%;
 }
@@ -550,4 +549,19 @@ code, .rst-content tt {
 
 .text-danger {
     color: #a94442;
+}
+
+footer {
+    text-align: center
+}
+
+.rst-content blockquote {
+    margin-left: 0;
+    border-left: solid 6px #c5bfbf;
+    padding: 10px;
+    background-color: #f3f0f0;
+}
+
+.rst-content blockquote p {
+    margin-bottom: 0
 }

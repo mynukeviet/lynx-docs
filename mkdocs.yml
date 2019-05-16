@@ -1,8 +1,7 @@
 site_name: Lynx CRM - Docs
 site_description: 
-copyright: Lynx CRM
 site_url: https://docs.lynx.vn
-site_author: Lynx
+site_author: TDFOSS.,LTD
 
 theme: readthedocs
 theme_dir: xf2
@@ -12,11 +11,15 @@ repo_name: Github
 repo_url: https://github.com/mynukeviet/lynx-docs
 
 markdown_extensions:
+    - admonition
     - toc:
         permalink: "#"
         
 pages:
 - Bắt đầu: index.md
-- Modules:
-    - Thông báo: modules/notification.md
-    - Hóa đơn: modules/invoice.md
+- Lịch: modules/calendar.md
+- Khách hàng: modules/customer.md
+- Dự án: modules/projects.md
+- Hóa đơn: modules/invoice.md
+- Email: modules/email.md
+- Khác: modules/other.md

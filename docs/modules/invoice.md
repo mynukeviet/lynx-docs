@@ -2,6 +2,14 @@
 title: Quản lý hóa đơn
 ---
 
+## Báo cáo doanh thu, lợi nhuận
+
+- Truy cập menu Hóa đơn / Báo cáo
+- Biểu đồ line thống kê
+	- **Doanh thu:** số liệu thu từ hóa đơn, danh sách thu (Văn phòng / Quản lý thu chi / Danh sách thu)
+	- **Chi:** số liệu từ danh sách chi (Văn phòng / Quản lý thu chi / Danh sách chi)
+	- **Lợi nhuận:** Lợi nhuận = Doanh thu - Chi 
+
 ## Bình luận trong hóa đơn
 
 Tính năng này giúp các nhân viên có thể thảo luận về hóa đơn ngay tại trang xem chi tiết hóa đơn. 
