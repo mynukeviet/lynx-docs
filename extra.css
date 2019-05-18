@@ -565,3 +565,8 @@ footer {
 .rst-content blockquote p {
     margin-bottom: 0
 }
+
+.rst-content p img{
+    display: block;
+    margin: auto;
+}

@@ -61,6 +61,11 @@
           
             <li class="toctree-l1">
 		
+    <a class="" href="../workforce/">Nhân sự</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <a class="" href="../customer/">Khách hàng</a>
 	    </li>
           
@@ -81,6 +86,19 @@
     
 
     <li class="toctree-l2"><a href="#tai-hoa-on-pdf">Tải hóa đơn PDF</a></li>
+    
+
+    <li class="toctree-l2"><a href="#cau-hinh-su-dung-iem-tich-luy">Cấu hình sử dụng điểm tích lũy</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#kich-hoat-tinh-nang-tich-luy-iem">Kích hoạt tính năng tích lũy điểm</a></li>
+        
+            <li><a class="toctree-l3" href="#su-dung-iem-tich-luy">Sử dụng điểm tích lũy</a></li>
+        
+            <li><a class="toctree-l3" href="#iem-tich-luy-toan-bo-khach-hang">Điểm tích lũy toàn bộ khách hàng</a></li>
+        
+        </ul>
     
 
     </ul>
@@ -146,10 +164,50 @@
 <p>Để bật tính năng này, <strong>ACP / Quản lý bình luận / Cấu hình</strong>. Chọn <strong>Sửa</strong> ở module <strong>Hóa đơn</strong>, tích chọn vào <strong>Sử dụng chức năng bình luận</strong> và <strong>Lưu cấu hình</strong></p>
 <p>Quay lại xem chi tiết hóa đơn, cuối trang sẽ xuất hiện khu vực bình luận</p>
 <h2 id="tai-hoa-on-pdf">Tải hóa đơn PDF<a class="headerlink" href="#tai-hoa-on-pdf" title="Permanent link">#</a></h2>
-<p>Đối với phiên bản Opensource, cần cài đặt thư viện PHP MPDF để cố thể tải về hóa đơn PDF</p>
+<ul>
+<li>Với trường hợp cần tải PDF để in ấn hoặc gửi thông tin cho khách hàng. Tại trang chi tiết hóa đơn, click chọn menu <strong>Tùy chọn khác =&gt; Xuất file pdf</strong></li>
+</ul>
+<p><img alt="" src="/images/tai-hoa-don-pdf.png" /></p>
+<ul>
+<li>
+<p>Bạn có thể tùy chỉnh nội dung, giao diện file thông qua econtent (<strong>ACP / Hóa đơn / Cấu hình gửi mail</strong>) , chọn tab <strong>Nội dung file pdf hóa đơn</strong></p>
+</li>
+<li>
+<p>Đối với <a href="https://github.com/tdfoss/lynx">phiên bản Opensource</a>, cần cài đặt thư viện Mpdf để sử dụng tính năng này</p>
+</li>
+</ul>
 <blockquote>
 <p>composer require mpdf/mpdf</p>
 </blockquote>
+<h2 id="cau-hinh-su-dung-iem-tich-luy">Cấu hình sử dụng điểm tích lũy<a class="headerlink" href="#cau-hinh-su-dung-iem-tich-luy" title="Permanent link">#</a></h2>
+<p>Điểm tích lũy cho phép bạn cộng dồn điểm cho khách hàng ở mỗi lần giao dịch thành công (Thanh toán thành công hóa đơn). Số điểm này có thể quy ra tiền, sử dụng cho các lần thanh toán tiếp theo.</p>
+<h3 id="kich-hoat-tinh-nang-tich-luy-iem">Kích hoạt tính năng tích lũy điểm<a class="headerlink" href="#kich-hoat-tinh-nang-tich-luy-iem" title="Permanent link">#</a></h3>
+<p>Mặc định, tính năng này không được kích hoạt, để kích hoạt, bạn cần:</p>
+<ol>
+<li><strong>Truy cập ACP / Hóa đơn / Cấu hình</strong></li>
+<li>Check chọn <strong>Sử dụng điểm tích lũy</strong></li>
+<li><strong>Giá trị quy đổi 1 điểm (VNĐ)</strong>, được tính sau khi thanh toán hóa đơn thành công, 1 điểm sẽ bằng bao nhiêu tiền, dựa trên tổng tiền hóa đơn để cộng điểm cho khách hàng</li>
+<li><strong>Giá trị sử dụng 1 điểm (VNĐ)</strong>, sử dụng khi thanh toán, nếu chọn thanh toán bằng điểm tích lũy, thì với số tiền cần thanh toán khách hàng sẽ bị trừ bao nhiêu điểm</li>
+</ol>
+<p>Nhấn <strong>Lưu thay đổi</strong> để cập nhật cấu hình</p>
+<h3 id="su-dung-iem-tich-luy">Sử dụng điểm tích lũy<a class="headerlink" href="#su-dung-iem-tich-luy" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>Điểm tích lũy sẽ được cộng dồn vào quỹ điểm của khách hàng với mỗi hóa đơn thanh toán thành công. Điểm tích lũy sẽ được sử dụng (trừ đi) khi khách hàng thanh toán một hóa đơn mới.</p>
+</li>
+<li>
+<p>Khi bạn <strong>thêm một giao dịch</strong> cho hóa đơn, hệ thống sẽ thông báo tổng số điểm mà khách hàng đang có</p>
+</li>
+<li>
+<p>Bạn có thể chủ động chọn hình thức thanh toán là <strong>Tiền mặt</strong>, hoặc <strong>Điểm tích lũy</strong></p>
+</li>
+</ul>
+<p><img alt="" src="/images/them-giao-dich.png" /></p>
+<h3 id="iem-tich-luy-toan-bo-khach-hang">Điểm tích lũy toàn bộ khách hàng<a class="headerlink" href="#iem-tich-luy-toan-bo-khach-hang" title="Permanent link">#</a></h3>
+<ul>
+<li>Trên giao diện quản lý, chọn <strong>Hóa đơn (Menu dọc) =&gt; Điểm tích lũy</strong></li>
+<li>Tại giao diện này, hệ thống hiển thị danh sách dạng bảng, các thông tin như họ tên, email, điện thoại, điểm, thành tiền</li>
+</ul>
               
             </div>
           </div>
