@@ -79,7 +79,16 @@
     <a class="current" href="./">Hóa đơn</a>
     <ul class="subnav">
             
+    <li class="toctree-l2"><a href="#gui-thong-tin-hoa-on">Gửi thông tin hóa đơn</a></li>
+    
+
     <li class="toctree-l2"><a href="#tu-ong-tao-hoa-on-cho-chu-ky-tiep-theo">Tự động tạo hóa đơn cho chu kỳ tiếp theo</a></li>
+    
+
+    <li class="toctree-l2"><a href="#them-giao-dich">Thêm giao dịch</a></li>
+    
+
+    <li class="toctree-l2"><a href="#xac-nhan-thanh-toan">Xác nhận thanh toán</a></li>
     
 
     <li class="toctree-l2"><a href="#bao-cao-doanh-thu-loi-nhuan">Báo cáo doanh thu, lợi nhuận</a></li>
@@ -152,7 +161,17 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="tu-ong-tao-hoa-on-cho-chu-ky-tiep-theo">Tự động tạo hóa đơn cho chu kỳ tiếp theo<a class="headerlink" href="#tu-ong-tao-hoa-on-cho-chu-ky-tiep-theo" title="Permanent link">#</a></h2>
+                <h2 id="gui-thong-tin-hoa-on">Gửi thông tin hóa đơn<a class="headerlink" href="#gui-thong-tin-hoa-on" title="Permanent link">#</a></h2>
+<p>Sau khi tạo hóa đơn, nếu bạn cần gửi thông tin hóa đơn cho khách hàng qua email, thực hiện như sau: </p>
+<ul>
+<li>Tại giao diện chi tiết hóa đơn, chọn <strong>Gửi thông tin</strong></li>
+<li>Hệ thống sẽ gửi thông tin hóa đơn và file đính kèm hóa đơn ở định dạng file PDF qua email chính của khách hàng</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Ghi chú</p>
+<p>Bạn có thể tùy chỉnh nội dung email thông báo thông tin hóa đơn, nội dung file PDF thông tin hóa đơn tại <strong>ACP / Hóa đơn (menu dọc) / Cấu hình nội dung</strong></p>
+</div>
+<h2 id="tu-ong-tao-hoa-on-cho-chu-ky-tiep-theo">Tự động tạo hóa đơn cho chu kỳ tiếp theo<a class="headerlink" href="#tu-ong-tao-hoa-on-cho-chu-ky-tiep-theo" title="Permanent link">#</a></h2>
 <p>Đối với các hóa đơn mang tính chất lặp đi lặp lại theo chu kỳ, bạn nên sử dụng tính năng này để hệ thống tự động tạo hóa đơn mới khi sắp hết hạn hóa đơn.</p>
 <p>Để một hóa đơn được tạo theo chu kỳ mới, tại giao diện <strong>thêm/sửa</strong> hóa đơn, cần lưu ý phải có đủ các thông tin như mô tả bên dưới:</p>
 <p><img alt="" src="/images/tao-hoa-don-theo-chu-ky.png" /></p>
@@ -172,6 +191,34 @@
 </li>
 <li><strong>Trước 2 ngày</strong> (tỉnh từ ngày kết thúc hóa đơn), nếu hóa đơn mới vấn chưa được thanh toán, hệ thống sẽ tự động gửi email nhắc thanh toán thêm một lần nữa.</li>
 </ul>
+<h2 id="them-giao-dich">Thêm giao dịch<a class="headerlink" href="#them-giao-dich" title="Permanent link">#</a></h2>
+<p>Một hóa đơn có thể có nhiều hơn một lần giao dịch (chia thành nhiều giai đoạn thanh toán). Với mỗi lần thanh toán, hệ thống sẽ hỗ trợ bạn ghi nhận các thông tin về lượt thanh toán đó (thời gian, trạng thái, số tiền,...)</p>
+<p>Hướng dẫn thêm giao dịch</p>
+<ul>
+<li>Tại giao diện chi tiết hóa đơn, tìm đến khu vực <strong>Lịch sử giao dịch</strong>, chọn <strong>Thêm giao dịch</strong></li>
+<li>Điền đầy đủ thông tin giao dịch, nhấn <strong>Thêm giao dịch</strong> để lưu thông tin</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Ghi chú</p>
+<ul>
+<li>Nếu số tiền giao dịch bằng hoặc lớn hơn giá trị hóa đơn, hệ thống tự động chuyển hóa đơn sang trạng thái <strong>Đã thanh toán đủ</strong></li>
+<li>Nếu số tiền nhỏ hơn giá trị hóa đơn, hệ thống tự động chuyển trạng thái hóa đơn sang <strong>Đã thanh toán trước</strong></li>
+</ul>
+</div>
+<h2 id="xac-nhan-thanh-toan">Xác nhận thanh toán<a class="headerlink" href="#xac-nhan-thanh-toan" title="Permanent link">#</a></h2>
+<p>Sau khi xác nhận hóa đơn đã được <strong>thanh toán đủ</strong> , người quản lý hóa đơn cần xác nhận rằng hóa đơn đã được thanh toán.</p>
+<ul>
+<li>Tại giao diện chi tiết hóa đơn, nhấn <strong>Xác nhận thanh toán</strong></li>
+<li>Sau khi xác nhận thành công, hệ thống sẽ:<ul>
+<li>Tự động chuyển trạng thái hóa đơn sang <strong>Đã thanh toán đủ</strong></li>
+<li>Tự động gửi thông báo về trạng thái hóa đơn qua email cho khách hàng </li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Ghi chú</p>
+<p>Bạn có thể tùy chỉnh nội dung email xác nhận thanh toán tại <strong>ACP / Hóa đơn (menu dọc) / Cấu hình nội dung</strong>, chọn tab <strong>Nội dung xác nhận hóa đơn</strong></p>
+</div>
 <h2 id="bao-cao-doanh-thu-loi-nhuan">Báo cáo doanh thu, lợi nhuận<a class="headerlink" href="#bao-cao-doanh-thu-loi-nhuan" title="Permanent link">#</a></h2>
 <ul>
 <li>Truy cập menu Hóa đơn / Báo cáo</li>
