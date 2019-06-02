@@ -79,6 +79,9 @@
     <a class="current" href="./">Hóa đơn</a>
     <ul class="subnav">
             
+    <li class="toctree-l2"><a href="#tu-ong-tao-hoa-on-cho-chu-ky-tiep-theo">Tự động tạo hóa đơn cho chu kỳ tiếp theo</a></li>
+    
+
     <li class="toctree-l2"><a href="#bao-cao-doanh-thu-loi-nhuan">Báo cáo doanh thu, lợi nhuận</a></li>
     
 
@@ -149,7 +152,27 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="bao-cao-doanh-thu-loi-nhuan">Báo cáo doanh thu, lợi nhuận<a class="headerlink" href="#bao-cao-doanh-thu-loi-nhuan" title="Permanent link">#</a></h2>
+                <h2 id="tu-ong-tao-hoa-on-cho-chu-ky-tiep-theo">Tự động tạo hóa đơn cho chu kỳ tiếp theo<a class="headerlink" href="#tu-ong-tao-hoa-on-cho-chu-ky-tiep-theo" title="Permanent link">#</a></h2>
+<p>Đối với các hóa đơn mang tính chất lặp đi lặp lại theo chu kỳ, bạn nên sử dụng tính năng này để hệ thống tự động tạo hóa đơn mới khi sắp hết hạn hóa đơn.</p>
+<p>Để một hóa đơn được tạo theo chu kỳ mới, tại giao diện <strong>thêm/sửa</strong> hóa đơn, cần lưu ý phải có đủ các thông tin như mô tả bên dưới:</p>
+<p><img alt="" src="/images/tao-hoa-don-theo-chu-ky.png" /></p>
+<ul>
+<li>Chọn Ngày bắt đầu hóa đơn (1)</li>
+<li>Chọn Chu kỳ thanh toán (2)</li>
+<li>Chọn Ngày kết thúc hóa đơn (3)</li>
+<li>Chọn Tự động tạo hóa đơn (4)</li>
+</ul>
+<p>Với hóa đơn được thiết lập tạo tự động theo chu kỳ, hệ thống sẽ:</p>
+<ul>
+<li><strong>Tự động tạo hóa đơn</strong> theo thông tin của chu kỳ mới</li>
+<li><strong>Trước 8 ngày</strong> (tỉnh từ ngày kết thúc hóa đơn)<ul>
+<li>Gửi thông tin hóa đơn mới cho khách hàng qua email</li>
+<li>Gửi thông báo cho người phụ trách hóa đơn</li>
+</ul>
+</li>
+<li><strong>Trước 2 ngày</strong> (tỉnh từ ngày kết thúc hóa đơn), nếu hóa đơn mới vấn chưa được thanh toán, hệ thống sẽ tự động gửi email nhắc thanh toán thêm một lần nữa.</li>
+</ul>
+<h2 id="bao-cao-doanh-thu-loi-nhuan">Báo cáo doanh thu, lợi nhuận<a class="headerlink" href="#bao-cao-doanh-thu-loi-nhuan" title="Permanent link">#</a></h2>
 <ul>
 <li>Truy cập menu Hóa đơn / Báo cáo</li>
 <li>Biểu đồ line thống kê<ul>
