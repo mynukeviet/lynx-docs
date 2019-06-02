@@ -2,6 +2,63 @@
 title: Quản lý hóa đơn
 ---
 
+## Gửi thông tin hóa đơn
+
+Sau khi tạo hóa đơn, nếu bạn cần gửi thông tin hóa đơn cho khách hàng qua email, thực hiện như sau: 
+
+- Tại giao diện chi tiết hóa đơn, chọn **Gửi thông tin**
+- Hệ thống sẽ gửi thông tin hóa đơn và file đính kèm hóa đơn ở định dạng file PDF qua email chính của khách hàng
+
+!!! note "Ghi chú"
+    Bạn có thể tùy chỉnh nội dung email thông báo thông tin hóa đơn, nội dung file PDF thông tin hóa đơn tại **ACP / Hóa đơn (menu dọc) / Cấu hình nội dung**
+
+## Tự động tạo hóa đơn cho chu kỳ tiếp theo
+
+Đối với các hóa đơn mang tính chất lặp đi lặp lại theo chu kỳ, bạn nên sử dụng tính năng này để hệ thống tự động tạo hóa đơn mới khi sắp hết hạn hóa đơn.
+
+Để một hóa đơn được tạo theo chu kỳ mới, tại giao diện **thêm/sửa** hóa đơn, cần lưu ý phải có đủ các thông tin như mô tả bên dưới:
+
+![](/images/tao-hoa-don-theo-chu-ky.png)
+
+- Chọn Ngày bắt đầu hóa đơn (1)
+- Chọn Chu kỳ thanh toán (2)
+- Chọn Ngày kết thúc hóa đơn (3)
+- Chọn Tự động tạo hóa đơn (4)
+
+Với hóa đơn được thiết lập tạo tự động theo chu kỳ, hệ thống sẽ:
+
+- **Tự động tạo hóa đơn** theo thông tin của chu kỳ mới
+- **Trước 8 ngày** (tỉnh từ ngày kết thúc hóa đơn)
+	- Gửi thông tin hóa đơn mới cho khách hàng qua email
+	- Gửi thông báo cho người phụ trách hóa đơn
+- **Trước 2 ngày** (tỉnh từ ngày kết thúc hóa đơn), nếu hóa đơn mới vấn chưa được thanh toán, hệ thống sẽ tự động gửi email nhắc thanh toán thêm một lần nữa.
+
+## Thêm giao dịch
+
+Một hóa đơn có thể có nhiều hơn một lần giao dịch (chia thành nhiều giai đoạn thanh toán). Với mỗi lần thanh toán, hệ thống sẽ hỗ trợ bạn ghi nhận các thông tin về lượt thanh toán đó (thời gian, trạng thái, số tiền,...)
+
+Hướng dẫn thêm giao dịch
+
+- Tại giao diện chi tiết hóa đơn, tìm đến khu vực **Lịch sử giao dịch**, chọn **Thêm giao dịch**
+- Điền đầy đủ thông tin giao dịch, nhấn **Thêm giao dịch** để lưu thông tin
+
+!!! note "Ghi chú"
+
+    - Nếu số tiền giao dịch bằng hoặc lớn hơn giá trị hóa đơn, hệ thống tự động chuyển hóa đơn sang trạng thái **Đã thanh toán đủ**
+    - Nếu số tiền nhỏ hơn giá trị hóa đơn, hệ thống tự động chuyển trạng thái hóa đơn sang **Đã thanh toán trước**
+
+## Xác nhận thanh toán
+
+Sau khi xác nhận hóa đơn đã được **thanh toán đủ** , người quản lý hóa đơn cần xác nhận rằng hóa đơn đã được thanh toán.
+
+- Tại giao diện chi tiết hóa đơn, nhấn **Xác nhận thanh toán**
+- Sau khi xác nhận thành công, hệ thống sẽ:
+	- Tự động chuyển trạng thái hóa đơn sang **Đã thanh toán đủ**
+	- Tự động gửi thông báo về trạng thái hóa đơn qua email cho khách hàng 
+
+!!! note "Ghi chú"
+    Bạn có thể tùy chỉnh nội dung email xác nhận thanh toán tại **ACP / Hóa đơn (menu dọc) / Cấu hình nội dung**, chọn tab **Nội dung xác nhận hóa đơn**
+
 ## Báo cáo doanh thu, lợi nhuận
 
 - Truy cập menu Hóa đơn / Báo cáo

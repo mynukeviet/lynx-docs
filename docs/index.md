@@ -8,6 +8,12 @@ title: Bắt đầu
 
 Lynx cung cấp các công cụ cơ bản, giúp việc quản lý nguồn dữ liệu doanh nghiệp khoa học, đơn giản hơn. Đặc biệt, với giấy phép GNU, bạn hoàn toàn có thể chỉnh sửa, phân phối mã nguồn này cho các mục đích khác nhau. Song, phải tôn trọng quyền tác giả bằng cách giữ lại các ghi chú về tác giả.
 
+## Danh mục viết tắt
+
+| Ký hiệu | Mô tả |
+|---------|-------|
+| ACP | Viết tắt của **Admin control panel**. <br />Đây là khu vực thiết lập nâng cao dành cho quản trị viên (domain/admin/index.php) |
+
 ## Tải về mã nguồn Lynx
 
 Để sở hữu mã nguồn Lynx, truy cập [Github](https://github.com/tdfoss/lynx/releases) để tải về phiên bản mới nhất trong danh sách.
