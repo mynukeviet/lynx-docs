@@ -569,6 +569,7 @@ footer {
 .rst-content p img{
     display: block;
     margin: auto;
+    border: solid 1px #ddd
 }
 
 table ul{
