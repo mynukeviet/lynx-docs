@@ -570,3 +570,7 @@ footer {
     display: block;
     margin: auto;
 }
+
+table ul{
+    margin-bottom: 0 !important
+}
